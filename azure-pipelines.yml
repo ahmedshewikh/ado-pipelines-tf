@@ -16,12 +16,12 @@ steps:
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: 'latest'
-    - task: TerraformTaskV4@4
-      inputs:
-        provider: 'azurerm'
-        command: 'init'
-        backendServiceArm: 'hisham1'
-        backendAzureRmResourceGroupName: '1-08924493-playground-sandbox'
-        backendAzureRmStorageAccountName: 'stgqbb36l47bp3058opivar'
-        backendAzureRmContainerName: 'myfirstcontainer'
-        backendAzureRmKey: '$(bkstrgkey)'
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'hisham1'
+    backendAzureRmResourceGroupName: '1-08924493-playground-sandbox'
+    backendAzureRmStorageAccountName: 'stgqbb36l47bp3058opivar'
+    backendAzureRmContainerName: 'myfirstcontainer'
+    backendAzureRmKey: '$(bkstrgkey)'
